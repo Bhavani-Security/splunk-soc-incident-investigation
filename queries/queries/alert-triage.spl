@@ -1,0 +1,3 @@
+index=lab sourcetype=edr (severity="Critical" OR severity="High")
+| sort _time
+| table _time extracted_host user severity process_name command_line technique_id technique_name
